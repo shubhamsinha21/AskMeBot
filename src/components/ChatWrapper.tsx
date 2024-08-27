@@ -1,11 +1,17 @@
 "use client";
-import { useChat } from "ai/react";
+import { Message, useChat } from "ai/react";
 import { Messages } from "./Messages";
 import { ChatInput } from "./ChatInput";
 
 // by default in next js , it is a server side componenys
 
-export const ChatWrapper = ({ sessionId }: { sessionId: string }) => {
+export const ChatWrapper = ({
+  sessionId,
+  initialMessages,
+}: {
+  sessionId: string;
+  initialMessages: Message[];
+}) => {
   const { messages, handleInputChange, input, handleSubmit, setInput } =
     useChat({
       // it takes 2 things
@@ -14,6 +20,8 @@ export const ChatWrapper = ({ sessionId }: { sessionId: string }) => {
       body: {
         sessionId,
       },
+      // add initial messages here
+      initialMessages,
     });
   return (
     <div

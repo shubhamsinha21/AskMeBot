@@ -35,7 +35,7 @@ export const ChatInput = ({
                 placeholder="Enter you query..."
                 value={input}
                 onChange={handleInputChange}
-                className="resize-none  hover:bg-zinc-900 rounded-xl text-base h-16"
+                className="resize-none bg-zinc-800 hover:bg-zinc-900 rounded-xl text-base h-16"
                 onKeyDown={(e) => {
                   if (e.key === "Enter" && !e.shiftKey) {
                     e.preventDefault();
