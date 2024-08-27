@@ -33,7 +33,7 @@ const page = async ({ params }: PageProps) => {
     reconstructedUrl
   );
   // console.log(params) ;
-  console.log("isAlreadyIndexed", isAlreadyIndexed);
+  // console.log("isAlreadyIndexed", isAlreadyIndexed);
 
   //   avoid inexing data everytime we reload - use upstash redis
   if (!isAlreadyIndexed) {
