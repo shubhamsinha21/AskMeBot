@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# WebBot: Your AI-Powered Web Assistant
 
-## Getting Started
+**Introducing WebBot**, your one-stop shop for navigating the vast sea of web information with ease!  This AI-powered assistant leverages cutting-edge technologies to seamlessly answer your questions directly from any website you visit. 
 
-First, run the development server:
+**Features:**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+* **Real-time Conversation :** Fire away your questions and receive instant, accurate answers without leaving the page.
+* **Comprehensive Understanding :** WebBot delves into the content of any website, parsing through text to extract the information you seek. 
+* **Natural Language Processing ️:** Interact with WebBot in a natural, conversational way, just like you would with a friend. 
+* **Isolated Chat Sessions :** WebBot keeps your conversations separate using unique session IDs, ensuring privacy and organization.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Usage:**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Visit any website.** ️
+2. **Prepend "localhost:3000" to the URL.** 
+3. **Ask WebBot your questions!** 
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+**Tech Stack:**
 
-## Learn More
+* **Frontend:** ️
+    * **Next.js + React.js** ⚛️: The foundation for building dynamic and interactive user interfaces.
+    * **ShadCN Styles** : A powerful styling solution for crafting beautiful and consistent UI elements.
+* **Styling and UI Components:** 
+    * **Tailwind CSS** : A utility-first approach to CSS for rapid styling.
+    * **Tailwind Merge** : Enables efficient Tailwind integration.
+    * **clsx** : Simplifies conditional CSS class application.
+    * **DevUI** : A comprehensive library for pre-built UI components.
+* **Data Management and AI:** ️
+    * **Upstash (Serverless Data Platform)** : Streamlines data storage and retrieval.
+    * **Upstash RAG-Chat** : Designed specifically for chat applications.
+    * **Upstash Database + Vector** : Stores and indexes data for efficient retrieval.
+    * **Vercel AI SDK** : The brains behind WebBot's AI capabilities.
+* **Icons:** ️
+    * **lucide-react** ✨: Provides a diverse collection of beautiful icons.
+* **Additional Tools:** 
+    * **NextUI Providers** : Sets up necessary global providers for NextUI components.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**Demo**
