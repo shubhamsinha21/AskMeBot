@@ -42,6 +42,10 @@
     * **NextUI Providers** : Sets up necessary global providers for NextUI components.
 
 **Demo** 
-https://github.com/user-attachments/assets/40dc1965-a74e-40df-b369-d36c2ef40681
+
+https://github.com/user-attachments/assets/bc487078-d282-40ee-83ce-b2f343838450
+
+
+
 
 
