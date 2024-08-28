@@ -1,6 +1,7 @@
 import { ChatWrapper } from "@/components/ChatWrapper";
 import { ragChat } from "@/lib/rag-chat";
 import { redis } from "@/lib/redis";
+import { cookies } from "next/headers";
 
 // define interface
 interface PageProps {
@@ -45,11 +46,28 @@ const page = async ({ params }: PageProps) => {
 
     await redis.sadd("indexed-urls", reconstructedUrl);
   }
+  // implementing sessions
 
-  //   implementing sessions
-  const sessionId = "mock sessions";
+  const sessionCookies = cookies().get("sessionId")?.value;
+  // session id is always a string with respect to 1 user
 
-  return <ChatWrapper sessionId={sessionId} />;
+  // hence overlapse between users
+  const sessionId = (reconstructedUrl + "--" + sessionCookies).replace(
+    /\//g,
+    ""
+  );
+
+  // grabbing initial message for redis database for storing previous messages
+  const initialMessages = await ragChat.history.getMessages({
+    // want no of last messages
+    amount: 10,
+    startIndex: 1,
+    sessionId,
+  });
+
+  return (
+    <ChatWrapper sessionId={sessionId} initialMessages={initialMessages} />
+  );
 };
 
 export default page;
