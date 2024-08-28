@@ -15,7 +15,16 @@ export const features = [
 ];
 
 export const usage = [
-  "Go to any website on the internet",
-  "Append localhost:3000 before the url of website",
-  "Ask chatbot question about the content of website",
+  {
+    steps: "Step-1",
+    step: "Go to any website on the internet",
+  },
+  {
+    steps: "Step-2",
+    step: "Append localhost:3000 before the url of website",
+  },
+  {
+    steps: "Step-3",
+    step: "Ask chatbot question about the content of website",
+  },
 ];

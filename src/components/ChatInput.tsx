@@ -46,7 +46,7 @@ export const ChatInput = ({
               />
               <Button
                 size="sm"
-                className="absolute z-10 border border-border bg-zinc-900 right-2 bottom-2"
+                className="absolute z-10 border border-border bg-zinc-900 right-2 text-white bottom-2"
                 type="submit"
               >
                 <Send className="size-4" />
